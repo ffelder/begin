@@ -55,7 +55,7 @@ div img {
 
 
 /* Mobile Landscape Screen Sizes */
-@media only screen and (min-width: 480px)  {
+@media only screen and (min-width: 480px )  {
 
 .col-1-2,
 .col-2{
@@ -66,11 +66,19 @@ div img {
 .col-4{
 	flex:0 0 92%;
 }
+.col-3-6{
+	flex: 0 0 44%;
+
+}
+.col-6-3{
+	flex:0 0 92%;
+	order:-1;
+}
 
 
 }
 /* Desktop screen Sizes */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width:768px) {
 .col-1-2,
 .col-1-4
 {
@@ -86,4 +94,21 @@ div img {
 	flex: 0 0 92%;
 
 }
+.col-6-3{
+
+    flex: 0 0 44%;
+    order:0;
+}
+.col-3-6{
+	  flex: 0 0 20%;
+}
+.reverse [class*='col-1']{
+	
+	margin-left:0%;
+	margin-right: 4%;
+}
+.reverse{
+	flex-direction: row-reverse;
+}
+
 }
